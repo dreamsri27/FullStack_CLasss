@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-6</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #container
+        {
+            display: inline-flex;
+        }
+        .box
+        {
+            width: 300px;
+            height: 400px;
+
+            background-color: bisque;
+            overflow: hidden;
+            border: 2px solid green;
+            margin-bottom: 10px;
+            text-align: justify;
+            padding: 20px;
+            margin: 20px;
+            margin-right: 20px;
+        }
+        #box1
+        {
+            background-color: yellow;
+        }
+        #box2
+        {
+            background-color: pink;
+            
+        }
+        #box3
+        {
+            background-color: yellow;
+        }
+        #box4
+        {
+            background-color: pink;
+        }
+        .box img
+        {
+            width: 100%;
+            height: 100px;
+            border-radius: 20px;
+        }
+        .box h2{
+            text-align: center;
+            margin: 10px;
+        }
+        .mybutton
+        {
+            display:block;
+         margin-top: 10px;  
+         text-decoration: none;
+         color: white;
+          font-family: arial;
+          background-color: red;
+          padding: 10px 20px;
+          border-radius: 20px;
+        
+        }
+        .mybutton:hover
+        {
+            background-color:orange;
+        }
+        h1{
+            text-align: center          ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practical-6: To create following layout using div tag</h1>
+    <div id="container">
+    <div class="box" id="box1">
+        <div class="image-heading">
+            <img src="../image/html2.jpg" alt=""/>
+        </div>
+    <h2>Introduction To HTML</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex architecto, temporibus harum maxime dolor vitae dignissimos. 
+        Tempore harum quisquam aliquam. Ipsa labore nesciunt distinctio veniam dolorum, id eligendi fuga nobis!
+    </p>
+    <div class="image"  style=" text-align: center;">
+    <a href="#" class="mybutton"> Read More</a>
+</div>
+</div>
+<div class="box" id="box2">
+    <div class="image-heading">
+        <img src="../image/css2.jpg" alt=""/>
+    </div>
+    <h2>Introduction to CSS</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. At saepe sed quod ipsa animi
+         quibusdam aliquid fugiat distinctio, libero vero quo quis iure numquam in? Illum veritatis
+          consequuntur tempora eaque voluptate molestias voluptatibus corrupti doloribus quasi! Recusandae
+          numquam ullam dolor, saepe dolorum eos!
+
+    </p>
+    <div class="image"  style=" text-align: center;">
+        <a href="#" class="mybutton"> Read More</a>
+    </div>
+
+</div>
+<div class="box" id="box3">
+    <div class="image-heading">
+        <img src="../image/jsimg.jpg" alt=""/>
+    </div>
+    <h2>Introduction to JS</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. At saepe sed quod ipsa animi
+         quibusdam aliquid fugiat distinctio, libero vero quo quis iure numquam in? Illum veritatis
+          consequuntur tempora eaque voluptate molestias voluptatibus corrupti doloribus quasi! Recusandae
+        
+    </p>
+    <div class="image"  style=" text-align: center;">
+        <a href="#" class="mybutton"> Read More</a>
+    </div>
+
+</div>
+<div class="box" id="box3">
+    <div class="image-heading">
+        <img src="../image/sqlimg.jpg" alt=""/>
+    </div>
+    <h2>Introduction to SQL</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. At saepe sed quod ipsa animi
+         quibusdam aliquid fugiat distinctio, libero vero quo quis iure numquam in? Illum veritatis
+          consequuntur tempora eaque voluptate molestias voluptatibus corrupti doloribus quasi! Recusandae
+         umquam ullam dolor, saepe dolorum eos!
+
+    </p>
+    <div class="image"  style=" text-align: center;">
+        <a href="#" class="mybutton"> Read More</a>
+    </div>
+
+</div>
+</div>
+</body>
+</html>
