@@ -1,0 +1,212 @@
+   <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 40px;
+        }
+
+        .corner {
+            border: 1px solid DarkOrange;
+            border-radius: 13px;
+            border-spacing: 0;
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid;
+            padding: 10px;
+
+        }
+        tbody{
+            background-color: rgb(228, 211, 211);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .chk {
+            color: rgb(5, 87, 5);
+        }
+
+        .nochk {
+            color: rgb(112, 1, 1);
+        }
+
+        th:nth-child(1) {
+            background-color: rgb(83, 83, 196);
+        }
+        th:nth-child(2) {
+            background-color: rgb(228, 211, 211);
+        }
+
+        td {
+            padding: 12px;
+        }
+
+        td,
+        th {
+            border: 0px;
+        }
+
+
+        .tooltip {
+            display: none;
+            position: absolute;
+            z-index: 100;
+            border: 1px;
+            background-color: white;
+            border: 1px solid green;
+            padding: 2px;
+            color: black;
+            border-top: 70px;
+            border-left: 500px;
+
+        }
+
+        .fa:hover span.tooltip {
+            display: block;
+            font-size: 15px;
+            transition: 0.4s;
+
+        }
+
+        tbody tr:hover {
+            background-color: rgb(122, 104, 104);
+        }
+    </style>
+</head>
+
+<body>
+    <table class="corner" align="center" width="1100px">
+        <thead>
+            <tr>
+                <th colspan="5">Fullstack Live Practical Book</th>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(228, 211, 211);">#</th>
+                <th>Practical Name</th>
+                <th style="background-color: rgb(228, 211, 211);">Link</th>
+                <th style="background-color: rgb(228, 211, 211);">Status</th>
+                <th style="background-color: rgb(228, 211, 211);">Tools</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Create a Web page including HTML basic skeleton using Online HTML Editor and Online Sandbox
+                    Environment</td>
+                <td><a href="./practical1.html">Practical-1</a></td>
+                <td class="chk">Checked</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"><span class="tooltip">Edit</span> </i>
+                    <i class="fa fa-trash-o" aria-hidden="true"><span class="tooltip">Delete</span> </i></i>
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Create a web page showing output as Html Structure using character Entities and span Tag</td>
+                <td><a href="./practical2.html">Practical-2</a></td>
+                <td class="chk">Checked</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"><span class="tooltip">Edit</span> </i>
+                    <i class="fa fa-trash-o" aria-hidden="true"><span class="tooltip">Delete</span> </i>
+                </td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Live your First Web-Page on Git-Hub </td>
+                <td><a href="./practical3.html">Practical-3</a></td>
+                <td class="chk">Checked</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"><span class="tooltip">Edit</span> </i>
+                    <i class="fa fa-trash-o" aria-hidden="true"><span class="tooltip">Delete</span> </i>
+                </td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Create a website having list of all practical and their individual practical Page links</td>
+                <td><a href="./index.html">Practical-4</a></td>
+                <td class="chk">Checked</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"><span class="tooltip">Edit</span></i>
+                    <i class="fa fa-trash-o" aria-hidden="true"><span class="tooltip">Delete</span> </i>
+                </td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Create a Web-Page showing the use of Image-Map in the Web Application.</td>
+                <td><a href="./practical5.html">Practical-5</a></td>
+                <td class="chk">Checked</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"><span class="tooltip">Edit</span></i>
+                    <i class="fa fa-trash-o" aria-hidden="true"><span class="tooltip">Delete</span></i>
+                </td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Create a Card Layout using CSS layout properties</td>
+                <td><a href="./practical6.html">Practical-6</a></td>
+                <td class="chk">Checked</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"><span class="tooltip">Edit</span> </i>
+                    <i class="fa fa-trash-o" aria-hidden="true"><span class="tooltip">Delete</span> </i>
+                </td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Create a Web Page Layout using div tags</td>
+                <td><a href="./practical7.html">Practical-7</a></td>
+                <td class="nochk">Checked</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"><span class="tooltip">Edit</span> </i>
+                    <i class="fa fa-trash-o" aria-hidden="true"><span class="tooltip">Delete</span> </i>
+                </td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>Create a Web-Page layout using nav tags</td>
+                <td><a href="./practical8.html">Practical-8</a></td>
+                <td class="nochk">Checked</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"><span class="tooltip">Edit</span> </i>
+                    <i class="fa fa-trash-o" aria-hidden="true"><span class="tooltip">Delete</span> </i>
+                </td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>Create a Web-Page layout using media tag</td>
+                <td><a href="./practical9.html">Practical-9</a></td>
+                <td class="nochk">Checked</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"><span class="tooltip">Edit</span> </i>
+                    <i class="fa fa-trash-o" aria-hidden="true"><span class="tooltip">Delete</span> </i>
+                </td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>Create a Responsive Side-Bar Navigation Menu</td>
+                <td><a href="./practical10.html">Practical-10</a></td>
+                <td class="nochk">Checked</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"><span class="tooltip">Edit</span> </i>
+                    <i class="fa fa-trash-o" aria-hidden="true"><span class="tooltip">Delete</span> </i>
+                </td>
+            </tr>
+            <tr>
+                <td>11.</td>
+                <td>Responsive Footer</td>
+                <td><a href="./practical11.html">Practical-11</a></td>
+                <td class="nochk">Un-Checked</td>
+                <td><i class="fa fa-pencil" aria-hidden="true"><span class="tooltip">Edit</span> </i>
+                    <i class="fa fa-trash-o" aria-hidden="true"><span class="tooltip">Delete</span> </i>
+                </td>
+            </tr>
+           
+        </tbody>
+
+
+
+    </table>
+</body>
+
+</html>
