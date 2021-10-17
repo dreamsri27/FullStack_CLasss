@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 20pt;
+    font-weight: normal;
+    background: lightblue; 
+    background: linear-gradient(-90deg, lightblue, black); 
+  }
+  
+  .main {
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+ #btn1,#btn2{
+    padding: 20px;
+    margin: 0px 30px 0px 30px;
+    background: transparent;
+    text-shadow: 1px 1px 1px #202020;
+    font-family: "Lato", sans-serif;
+    font-size: 18pt;
+    border: 1px solid lightblue;
+    color: lightblue;
+  }
+  #clickme{
+    padding: 20px;
+    /* background: transparent; */
+    /* background: lightblue;  */
+    /* text-shadow: 1px 1px 1px #202020; */
+    font-family: "Lato", sans-serif;
+    font-size: 18pt;
+    /* border: 1px solid lightblue; */
+    background: lightblue; 
+   
+    /* s */
+
+  }
+</style>
+
+<body>
+    <div class="main">
+    <h1 class="counter">COUNTER</h1>
+    <div class="container">
+    <button id="btn1" onclick="decrement()">&#8722;</button>
+    <button id = "clickme"></button>
+    <button id="btn2" onclick="increment()">&#43;</button>
+</div>
+</div>
+</body>
+
+    <script>
+    var  button1 = document.getElementById("btn1");
+    var  button = document.getElementById("clickme");
+    var  button2 = document.getElementById("btn2");
+      var count = 0;
+      button1.onclick = function(){
+          count = count-1;
+          button.innerHTML = count;
+          if(count==0||count<0){
+              button1.disabled = true;
+          }
+          else{
+              button1.disabled = false;
+          }
+      };
+      button2.onclick = function(){
+          count+=1;
+          button.innerHTML=count;
+          if(count==0||count<0){
+              button1.disabled = true;
+          }
+          else{
+              button1.disabled= false;
+          }
+      };
+    
+    </script>
+</body>
+</html>

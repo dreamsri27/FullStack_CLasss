@@ -4,39 +4,255 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRACTICAL-4</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/indexcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .wholecontent{
+            display: none;
+        }
+        .loader{
+            margin: auto;
+            height: 100vh;
+            width: 100px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .circle{
+            border: solid purple 10px;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border-top: plum solid 10px;
+            animation: load 1s linear infinite;
+        }
+        @keyframes load {
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(120deg);
+            }
+            50%{
+                transform: rotate(240deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+       th, td{
+            border-bottom: 2px solid gray;
+            border-collapse: collapse;
+        }
+        table{
+            
+            margin: auto;
+            width: 98%;
+            padding: 0%;
+            height: max-content;
+            border: black solid 2px;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 10px;
+            border-collapse: collapse;
+            
+        }
+        
+        i{
+            padding: 2%;
+        }
+        a{
+            padding-top: 10%;
+            color: rgb(83, 82, 82);
+            
+        }
+        tr{
+            height: 40px;
+        }
+        
+        .sn{
+            width: 4%;
+            text-align: center;
+        }
+        .name{
+            width: 40%;
+            
+        }
+        .link{
+            width: 10%;
+            text-align:justify;
+    
+        }
+        td.stts, td.nstts{
+            width: 8%;
+            text-align: center;
+            color: green;
+        }
+        .tool{
+            width: 8%;
+            text-align: center;
+        }
+        .heading{
+            width: 101%;
+            background-color: rgb(33, 57, 109);
+            color: white;
+            border-bottom: none;
+        }
+        td.nstts{
+            color: red;
+        }
+
+    </style>
 </head>
-<body style="background-color: gray">
-    <h1 style="text-align: center;color:black">List of practicals</h1>
-    <h2 style="text-align: center;color: brown">Here is a list of all the practicals of Fullstack</h2>
-    <p>Practical 1 : Create a web page using html code editor </p>
-    <a href="./Pages/practical1.html"> link to practical1 </a>
-    <p>Practical 2 : Create a web page showing output as Html Structure using character Entities and span Tag</p>
-    <a href="./Pages/practical2.html"> link to practical2 </a>
-    <p>Practical 3 : Live your First Web-Page on Git-Hub </p>
-    <a href="./Pages/practical3.html"> link to practical3 </a>
-    <p>Practical 4 : Create a website having list of all practical and their individual practical Page links</p>
-    <a href="./Pages/index.html"> link to practical4 </a>
-    <p>Practical 5 : Create a web-page showing the use of image-map in the web application</p>
-    <a href="./Pages/practical5.html"> link to practical5 </a>
-    <p>Practical 6 : Create a Card Layout using CSS layout properties</p>
-    <a href="./Pages/practical6.html"> link to practical6 </a>
-    <p>Practical 7 : Create a Web-Page layout using div tags</p>
-    <a href="./Pages/practical7.html"> link to practical7 </a>
-    <p>Practical 8: Create a Web-Page layout using nav tags</p>
-    <a href="./Pages/practical8.html"> link to practical8 </a>
-    <p>Practical 9: Create a Web-Page layout using media tag</p>
-    <a href="./Pages/practical9.html"> link to practical9s </a>
-    <p>Practical-10: Responsive </p>
-    <a href="./Pages/practical10.html" > LINK FOR PRACTICAL10</a>
-    <p>Practical-11: Responsive Footer</p>
-    <a href="./Pages/practical11.html" > LINK FOR PRACTICAL11</a>
-    <p>Practical-12: FullStack Live Practical Book</p>
-    <a href="./Pages/practical12.html" > LINK FOR PRACTICAL12</a>
-    <p>Practical-13: Custom Table</p>
-    <a href="./Pages/practical13.html" > LINK FOR PRACTICAL13</a>
-    
-    
-   
+<body >
+    <div class="loader" id='loader'>
+        <div class="circle"></div>
+    </div>
+    <div class="wholecontent" id='wholecontent'>
+    <header>
+        <div style="display: flex;">
+            <h1 id="mainHead"><a href="https://github.com/dreamsri27/FullStack_CLasss" target="_blank" style="margin-left:0px ;">DreamTech</a></h1>
+            <div style="text-align: right; margin-left: 28% ;display: flex;padding: 2%;">
+                <a class="navLink" href="#">home</a>
+                <a class="navLink" href="#about">about</a>
+                <a class="navLink" href="#content">content</a>
+                <a class="navLink" href="#assignments">assignments</a>
+                
+            </div>
+        </div>
+        <img id="flstk" src="./image/full-stack.jpg" alt="" >       
+    </header>
+    <div class="container">
+        <div id="about"><h1>About this course</h1>
+            <h3>The images are clickable!!</h3>
+        <p >Front-end web development is everything involved in progamming the user interface of web application. Typically it referes to the Hypertext Markup Language(HTML), Cascading Style Sheets(CSS) and JavaScript portion of web site production as opposed to the database or server-side programming .It encompasses everything from building a simple page of HTML text to creating comlpex, responsive HTML5 website designed to be accessed via various different browsers, devices and screen sizes.<p>
+        </div>
+       
+    </div>
+        
+    <table id="assignments">
+        <tr><th colspan="5" class="heading"><h3>Table For Practicals</h3></th></tr>
+        
+        <tr>
+            <th class="sn">#</th>
+            <th class="name">Practical Name</th>
+            <th class="link">Link</th>
+            <th class="stts">Status</th>
+            <th class="tool">Tools</th>
+          </tr>
+        <tr>
+            <td class="sn">1</td>
+            <td class="name">Create a web page including HTML basic skeleton using offline HTML editor.</td>
+            <td class="link"><a href="./Pages/practical1.html">Practical-1</a></td>
+            <td class="stts">Checked</td>
+            <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="sn">2</td>
+            <td class="name">Create a web page including HTML basic skeleton using online sandbox.</td>
+            <td class="link"><a href="./Pages/practical2.html">Practical-2</a></td>
+            <td class="stts">Checked</td>
+            <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="sn">3</td>
+            <td class="name">Make your Page Live on Github</td>
+            <td class="link"><a href="./Pages/practical3.html">Practical-3</a></td>
+            <td class="stts">Checked</td>
+            <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="sn">4</td>
+            <td class="name">Navigate your Pages from one to another</td>
+            <td class="link"><a href="./Pages/practical4.html">Practical-4</a></td>
+            <td class="stts">Checked</td>
+            <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="sn">5</td>
+            <td class="name">A goodway to use ImageMap</td>
+            <td class="link"><a href="./Pages/practical5.html">Practical-5</a></td>
+            <td class="stts">Checked</td>
+            <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
+        </tr>
+        
+        <tr>
+            <td class="sn">6</td>
+            <td class="name">Create the card layout using css layout properties </td>
+            <td class="link"><a href="./Pages/practical6.html">Practical-6</a></td>
+            <td class="stts">Checked</td>
+            <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="sn">7</td>
+            <td class="name">Create a layout using divs tags only and css</td>
+            <td class="link"><a href="./Pages/practical7.html">Practical-7</a></td>
+            <td class="stts">Checked</td>
+            <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="sn">8</td>
+            <td class="name">Create a web page having fixed navigation bar with the given content.</td>
+            <td class="link"><a href="./Pages/practical8.html">Practical-8</a></td>
+            <td class="stts">Checked</td>
+            <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="sn">9</td>
+            <td class="name">Create a responsive web layout with responsive navigation bar</td>
+            <td class="link"><a href="./Pages/practical9.html">Practical-9</a></td>
+            <td class="stts">Checked</td>
+            <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="sn">10</td>
+            <td class="name">Create a responsive side-bar navigation bar.</td>
+            <td class="link"><a href="./Pages/practical10.html">Practical-10</a></td>
+            <td class="stts">Checked</td>
+            <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="sn">11</td>
+            <td class="name">Create a responsive footer</td>
+            <td class="link"><a href="./Pages/practical11.html">Practical-11</a></td>
+            <td class="stts">Checked</td>
+            <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="sn">12</td>
+            <td class="name">create a table having the list of all practicals till now.</td>
+            <td class="link"><a href="./Pages/practical12.html">Practical-12</a></td>
+            <td class="stts">Checked</td>
+            <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="sn">13</td>
+            <td class="name">create a Price table for users</td>
+            <td class="link"><a href="./Pages/practical3.html">Practical-13</a></td>
+            <td class="stts">Checked</td>
+            <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
+        </tr>
+        <tr>
+            <td class="sn">14</td>
+            <td class="name">create a counter for users</td>
+            <td class="link"><a href="./Pages/practical14.html">Practical-14</a></td>
+            <td class="stts">Checked</td>
+            <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
+        </tr>
+        
+        </table>
+    </div>
+
 </body>
+<script>
+    var con = document.getElementById('wholecontent')
+    var load = document.getElementById('loader')
+    setTimeout(() => {
+        load.style.display='none'
+        con.style.display = 'block'
+
+    }, 4000);
+</script>
 </html>
